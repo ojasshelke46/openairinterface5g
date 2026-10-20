@@ -1,0 +1,124 @@
+{
+  "context": {
+    "date": "2026-10-21T03:34:39+05:30",
+    "host_name": "oai",
+    "executable": "./benchmark_rotate_vector",
+    "num_cpus": 12,
+    "mhz_per_cpu": 2000,
+    "cpu_scaling_enabled": false,
+    "caches": [
+      {
+        "type": "Data",
+        "level": 1,
+        "size": 131072,
+        "num_sharing": 1
+      },
+      {
+        "type": "Instruction",
+        "level": 1,
+        "size": 196608,
+        "num_sharing": 1
+      },
+      {
+        "type": "Unified",
+        "level": 2,
+        "size": 16777216,
+        "num_sharing": 4
+      },
+      {
+        "type": "Unified",
+        "level": 3,
+        "size": 67108864,
+        "num_sharing": 12
+      }
+    ],
+    "load_avg": [0.00488281,0.770508,0.849609],
+    "library_build_type": "debug"
+  },
+  "benchmarks": [
+    {
+      "name": "BM_rotate_cpx_vector/100",
+      "family_index": 0,
+      "per_family_instance_index": 0,
+      "run_name": "BM_rotate_cpx_vector/100",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 38656814,
+      "real_time": 1.8249706869146515e+01,
+      "cpu_time": 1.8249671687894402e+01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_rotate_cpx_vector/256",
+      "family_index": 0,
+      "per_family_instance_index": 1,
+      "run_name": "BM_rotate_cpx_vector/256",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 15112976,
+      "real_time": 4.6358255581396257e+01,
+      "cpu_time": 4.6358195037165423e+01,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_rotate_cpx_vector/1024",
+      "family_index": 0,
+      "per_family_instance_index": 2,
+      "run_name": "BM_rotate_cpx_vector/1024",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 3763561,
+      "real_time": 1.8698560273155553e+02,
+      "cpu_time": 1.8698514465422508e+02,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_rotate_cpx_vector/4096",
+      "family_index": 0,
+      "per_family_instance_index": 3,
+      "run_name": "BM_rotate_cpx_vector/4096",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 905379,
+      "real_time": 7.4270301828911636e+02,
+      "cpu_time": 7.4270167300103060e+02,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_rotate_cpx_vector/16384",
+      "family_index": 0,
+      "per_family_instance_index": 4,
+      "run_name": "BM_rotate_cpx_vector/16384",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 235256,
+      "real_time": 2.9884310878462588e+03,
+      "cpu_time": 2.9884264248308241e+03,
+      "time_unit": "ns"
+    },
+    {
+      "name": "BM_rotate_cpx_vector/20000",
+      "family_index": 0,
+      "per_family_instance_index": 5,
+      "run_name": "BM_rotate_cpx_vector/20000",
+      "run_type": "iteration",
+      "repetitions": 1,
+      "repetition_index": 0,
+      "threads": 1,
+      "iterations": 191828,
+      "real_time": 3.6424873793291449e+03,
+      "cpu_time": 3.6424789655316204e+03,
+      "time_unit": "ns"
+    }
+  ]
+}

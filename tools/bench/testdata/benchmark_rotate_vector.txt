@@ -1,0 +1,42 @@
+UpdateCTestConfiguration  from :/home/ojasshelke/bench730/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/ojasshelke/bench730/build/DartConfiguration.tcl
+Test project /home/ojasshelke/bench730/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 45
+    Start 45: benchmark_rotate_vector
+
+45: Test command: /home/ojasshelke/bench730/build/openair1/PHY/TOOLS/tests/benchmark_rotate_vector
+45: Working Directory: /home/ojasshelke/bench730/build/openair1/PHY/TOOLS/tests
+45: Test timeout computed to be: 10000000
+45: 2026-10-21T03:27:29+05:30
+45: Running /home/ojasshelke/bench730/build/openair1/PHY/TOOLS/tests/benchmark_rotate_vector
+45: Run on (12 X 2000 MHz CPU s)
+45: CPU Caches:
+45:   L1 Data 128 KiB (x12)
+45:   L1 Instruction 192 KiB (x12)
+45:   L2 Unified 16384 KiB (x3)
+45:   L3 Unified 65536 KiB (x1)
+45: Load Average: 3.48, 3.21, 1.35
+45: ***WARNING*** Library was built as DEBUG. Timings may be affected.
+45: ---------------------------------------------------------------------
+45: Benchmark                           Time             CPU   Iterations
+45: ---------------------------------------------------------------------
+45: BM_rotate_cpx_vector/100         19.1 ns         19.1 ns     36199797
+45: BM_rotate_cpx_vector/256         48.3 ns         48.3 ns     14563260
+45: BM_rotate_cpx_vector/1024         196 ns          196 ns      3590376
+45: BM_rotate_cpx_vector/4096         785 ns          785 ns       892703
+45: BM_rotate_cpx_vector/16384       3133 ns         3133 ns       224155
+45: BM_rotate_cpx_vector/20000       3825 ns         3825 ns       182743
+1/1 Test #45: benchmark_rotate_vector ..........   Passed    6.04 sec
+
+The following tests passed:
+	benchmark_rotate_vector
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   6.05 sec

@@ -1,0 +1,306 @@
+UpdateCTestConfiguration  from :/home/ojasshelke/bench730/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/ojasshelke/bench730/build/DartConfiguration.tcl
+Test project /home/ojasshelke/bench730/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 202
+    Start 202: physim.5g.nr_ulsim.misc.test1
+
+202: Test command: /usr/bin/cmake "-DTEST_CMD=/home/ojasshelke/bench730/build/nr_ulsim;-P;-n300;-m9;-r106;-s5" "-DCHECK_SCRIPT=/home/ojasshelke/bench730/src/openair1/SIMULATION/tests/analyze-timing.sh" "-P" "/home/ojasshelke/bench730/src/openair1/SIMULATION/tests/RunTimedTest.cmake"
+202: Working Directory: /home/ojasshelke/bench730/build/openair1/SIMULATION/tests
+202: Environment variables: 
+202:  LD_LIBRARY_PATH=/home/ojasshelke/bench730/build
+202:  TEST_DESCRIPTION=MCS 9 106 PRBs
+202: Test timeout computed to be: 10000000
+202: '/home/ojasshelke/bench730/build/nr_ulsim' '-P' '-n300' '-m9' '-r106' '-s5'
+202: '/home/ojasshelke/bench730/src/openair1/SIMULATION/tests/analyze-timing.sh'
+202: CMDLINE: "/home/ojasshelke/bench730/build/nr_ulsim" "-P" "-n300" "-m9" "-r106" "-s5" 
+202: Initializing random number generator, seed 4687425689728571788
+202: handling optarg P
+202: handling optarg n
+202: handling optarg m
+202: handling optarg r
+202: handling optarg s
+202: Setting SNR0 to 5.000000
+202: AWGN: ricean_factor 0.000000
+202: Pre-allocating padded host memory for the CPU channel pipeline...
+202: [ULSIM]: length_dmrs: 1, l_prime_mask: 1	number_dmrs_symbols: 1, mapping_type: 1 add_pos: 0 
+202: [ULSIM]: CDM groups: 1, dmrs_config_type: 0, num_rbs: 106, nb_symb_sch: 12, start_symbol 0
+202: [ULSIM]: MCS: 9, mod order: 2, code_rate: 6790
+202: [ULSIM]: VALUE OF G: 29256, TBS: 19464
+202: *****************************************
+202: SNR 5.000000: n_errors (300/300,0/300,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (464379/8776800,454579/8776800,0/0,0/0)
+202: 
+202: SNR 5.000000: Channel BLER (1.000000e+00,0.000000e+00,nan,nan Channel BER (5.290983e-02,5.179325e-02,nan,nan) Avg round 2.00, Eff Rate 9732.0000 bits/slot, Eff Throughput 50.00, TBS 19464 bits/slot
+202: DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+202: *****************************************
+202: 
+202: UE TX
+202: |__ PHY_PROC_TX                             57.45 us (600 trials)		(34473.53 total [ms])
+202: |__ PUSCH_PROC_STATS                        30.26 us (600 trials)		(18157.25 total [ms])
+202: |__ UCI_ON_PUSCH_MAPPING                     0.00 us (  0 trials)		(  0.00 total [ms])
+202: |__ ULSCH_LDPC_ENCODING_STATS               16.51 us (600 trials)		(9909.00 total [ms])
+202: |__ ULSCH_ENCODING_STATS                    19.77 us (600 trials)		(11864.22 total [ms])
+202: |__ OFDM_MOD_STATS                          27.11 us (600 trials)		(16267.06 total [ms])
+202: 
+202: gNB RX
+202: Total PHY proc rx                           137.05 us (600 trials)
+202:  Statistics std=44.04, min=84.38, q1=94.25, median=162.75, q3=181.67, max=224.88 µs (on 600 trials)
+202: |__ RX PUSCH time                           25.10 us (600 trials)		(15059.42 total [ms])
+202:     |__ ULSCH channel estimation time        9.69 us (600 trials)		(5816.34 total [ms])
+202:         |__ Antenna Processing time          6.45 us (600 trials)
+202:     |__ RX PUSCH Initialization time         1.51 us (600 trials)		(904.83 total [ms])
+202:     |__ RX PUSCH Symbol Processing time     13.79 us (600 trials)		(8277.12 total [ms])
+202:         |__ RX PUSCH extraction              0.21 us (600 trials)
+202:         |__ RX PUSCH channel compensation    0.00 us (600 trials)
+202:         |__ RX PUSCH LLR                     0.00 us (600 trials)
+202:         |__ RX PUSCH layer demapping         0.00 us (600 trials)
+202:         |__ RX PUSCH unscrambling            0.00 us (600 trials)
+202: |__ ULSCH total decoding time              111.87 us (600 trials)		(67123.73 total [ms])
+202:     |__ ULSCH segments decoding time        35.00 us (1800 trials)		(63005.97 total [ms])
+202: |__ RX SRS time                              0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Generate SRS sequence time           0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Get SRS signal time                  0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS channel estimation time          0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS timing advance estimation time   0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS report TLV build time            0.00 us (  0 trials)		(  0.00 total [ms])
+202:         |__ SRS beam report build time       0.00 us (  0 trials)
+202:         |__ SRS IQ matrix build time         0.00 us (  0 trials)
+202: |__ Multipath Channel (CPU)                 43.32 us (600 trials)		(25989.66 total [ms])
+202: |__ Add Noise (CPU)                        212.97 us (600 trials)		(127784.81 total [ms])
+202: 
+202: *****************************************
+202: SNR 5.200000: n_errors (299/300,0/299,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (429030/8776800,417518/8747544,0/0,0/0)
+202: 
+202: SNR 5.200000: Channel BLER (9.966667e-01,0.000000e+00,nan,nan Channel BER (4.888228e-02,4.772974e-02,nan,nan) Avg round 2.00, Eff Rate 9764.4400 bits/slot, Eff Throughput 50.17, TBS 19464 bits/slot
+202: DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+202: *****************************************
+202: 
+202: UE TX
+202: |__ PHY_PROC_TX                             57.73 us (599 trials)		(34578.81 total [ms])
+202: |__ PUSCH_PROC_STATS                        30.43 us (599 trials)		(18230.97 total [ms])
+202: |__ UCI_ON_PUSCH_MAPPING                     0.00 us (  0 trials)		(  0.00 total [ms])
+202: |__ ULSCH_LDPC_ENCODING_STATS               16.51 us (599 trials)		(9890.46 total [ms])
+202: |__ ULSCH_ENCODING_STATS                    19.73 us (599 trials)		(11816.12 total [ms])
+202: |__ OFDM_MOD_STATS                          27.22 us (599 trials)		(16302.96 total [ms])
+202: 
+202: gNB RX
+202: Total PHY proc rx                           142.04 us (599 trials)
+202:  Statistics std=42.57, min=84.62, q1=94.58, median=165.50, q3=182.00, max=344.08 µs (on 599 trials)
+202: |__ RX PUSCH time                           25.56 us (599 trials)		(15311.23 total [ms])
+202:     |__ ULSCH channel estimation time        9.86 us (599 trials)		(5908.56 total [ms])
+202:         |__ Antenna Processing time          6.54 us (599 trials)
+202:     |__ RX PUSCH Initialization time         1.54 us (599 trials)		(920.16 total [ms])
+202:     |__ RX PUSCH Symbol Processing time     14.07 us (599 trials)		(8429.12 total [ms])
+202:         |__ RX PUSCH extraction              0.22 us (599 trials)
+202:         |__ RX PUSCH channel compensation    0.00 us (599 trials)
+202:         |__ RX PUSCH LLR                     0.00 us (599 trials)
+202:         |__ RX PUSCH layer demapping         0.00 us (599 trials)
+202:         |__ RX PUSCH unscrambling            0.00 us (599 trials)
+202: |__ ULSCH total decoding time              116.41 us (599 trials)		(69726.80 total [ms])
+202:     |__ ULSCH segments decoding time        36.49 us (1797 trials)		(65569.24 total [ms])
+202: |__ RX SRS time                              0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Generate SRS sequence time           0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Get SRS signal time                  0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS channel estimation time          0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS timing advance estimation time   0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS report TLV build time            0.00 us (  0 trials)		(  0.00 total [ms])
+202:         |__ SRS beam report build time       0.00 us (  0 trials)
+202:         |__ SRS IQ matrix build time         0.00 us (  0 trials)
+202: |__ Multipath Channel (CPU)                 43.54 us (1199 trials)		(52203.60 total [ms])
+202: |__ Add Noise (CPU)                        213.87 us (1199 trials)		(256430.61 total [ms])
+202: 
+202: *****************************************
+202: SNR 5.400000: n_errors (217/300,0/217,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (396350/8776800,279340/6348552,0/0,0/0)
+202: 
+202: SNR 5.400000: Channel BLER (7.233333e-01,0.000000e+00,nan,nan Channel BER (4.515883e-02,4.400058e-02,nan,nan) Avg round 1.72, Eff Rate 12424.5200 bits/slot, Eff Throughput 63.83, TBS 19464 bits/slot
+202: DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+202: *****************************************
+202: 
+202: UE TX
+202: |__ PHY_PROC_TX                             59.07 us (517 trials)		(30541.00 total [ms])
+202: |__ PUSCH_PROC_STATS                        30.84 us (517 trials)		(15942.67 total [ms])
+202: |__ UCI_ON_PUSCH_MAPPING                     0.00 us (  0 trials)		(  0.00 total [ms])
+202: |__ ULSCH_LDPC_ENCODING_STATS               16.61 us (517 trials)		(8589.66 total [ms])
+202: |__ ULSCH_ENCODING_STATS                    20.00 us (517 trials)		(10337.66 total [ms])
+202: |__ OFDM_MOD_STATS                          28.14 us (517 trials)		(14546.63 total [ms])
+202: 
+202: gNB RX
+202: Total PHY proc rx                           157.62 us (517 trials)
+202:  Statistics std=61.34, min=84.38, q1=128.88, median=169.50, q3=182.17, max=1278.92 µs (on 517 trials)
+202: |__ RX PUSCH time                           26.27 us (517 trials)		(13579.16 total [ms])
+202:     |__ ULSCH channel estimation time       10.20 us (517 trials)		(5274.33 total [ms])
+202:         |__ Antenna Processing time          6.78 us (517 trials)
+202:     |__ RX PUSCH Initialization time         1.61 us (517 trials)		(834.71 total [ms])
+202:     |__ RX PUSCH Symbol Processing time     14.34 us (517 trials)		(7413.07 total [ms])
+202:         |__ RX PUSCH extraction              0.22 us (517 trials)
+202:         |__ RX PUSCH channel compensation    0.00 us (517 trials)
+202:         |__ RX PUSCH LLR                     0.00 us (517 trials)
+202:         |__ RX PUSCH layer demapping         0.00 us (517 trials)
+202:         |__ RX PUSCH unscrambling            0.00 us (517 trials)
+202: |__ ULSCH total decoding time              131.26 us (517 trials)		(67862.90 total [ms])
+202:     |__ ULSCH segments decoding time        41.30 us (1551 trials)		(64054.43 total [ms])
+202: |__ RX SRS time                              0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Generate SRS sequence time           0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Get SRS signal time                  0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS channel estimation time          0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS timing advance estimation time   0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS report TLV build time            0.00 us (  0 trials)		(  0.00 total [ms])
+202:         |__ SRS beam report build time       0.00 us (  0 trials)
+202:         |__ SRS IQ matrix build time         0.00 us (  0 trials)
+202: |__ Multipath Channel (CPU)                 43.60 us (1716 trials)		(74820.04 total [ms])
+202: |__ Add Noise (CPU)                        214.89 us (1716 trials)		(368752.70 total [ms])
+202: 
+202: *****************************************
+202: SNR 5.600000: n_errors (67/300,0/67,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (363628/8776800,79446/1960152,0/0,0/0)
+202: 
+202: SNR 5.600000: Channel BLER (2.233333e-01,0.000000e+00,nan,nan Channel BER (4.143059e-02,4.053053e-02,nan,nan) Avg round 1.22, Eff Rate 17290.5200 bits/slot, Eff Throughput 88.83, TBS 19464 bits/slot
+202: DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+202: *****************************************
+202: 
+202: UE TX
+202: |__ PHY_PROC_TX                             57.43 us (367 trials)		(21077.62 total [ms])
+202: |__ PUSCH_PROC_STATS                        30.20 us (367 trials)		(11082.37 total [ms])
+202: |__ UCI_ON_PUSCH_MAPPING                     0.00 us (  0 trials)		(  0.00 total [ms])
+202: |__ ULSCH_LDPC_ENCODING_STATS               16.43 us (367 trials)		(6030.21 total [ms])
+202: |__ ULSCH_ENCODING_STATS                    19.63 us (367 trials)		(7206.01 total [ms])
+202: |__ OFDM_MOD_STATS                          27.16 us (367 trials)		(9968.83 total [ms])
+202: 
+202: gNB RX
+202: Total PHY proc rx                           159.08 us (367 trials)
+202:  Statistics std=22.20, min=85.92, q1=154.00, median=162.38, q3=170.04, max=205.46 µs (on 367 trials)
+202: |__ RX PUSCH time                           25.37 us (367 trials)		(9309.79 total [ms])
+202:     |__ ULSCH channel estimation time        9.80 us (367 trials)		(3597.13 total [ms])
+202:         |__ Antenna Processing time          6.54 us (367 trials)
+202:     |__ RX PUSCH Initialization time         1.51 us (367 trials)		(554.84 total [ms])
+202:     |__ RX PUSCH Symbol Processing time     13.96 us (367 trials)		(5122.95 total [ms])
+202:         |__ RX PUSCH extraction              0.22 us (367 trials)
+202:         |__ RX PUSCH channel compensation    0.00 us (367 trials)
+202:         |__ RX PUSCH LLR                     0.00 us (367 trials)
+202:         |__ RX PUSCH layer demapping         0.00 us (367 trials)
+202:         |__ RX PUSCH unscrambling            0.00 us (367 trials)
+202: |__ ULSCH total decoding time              133.64 us (367 trials)		(49046.30 total [ms])
+202:     |__ ULSCH segments decoding time        42.16 us (1101 trials)		(46422.36 total [ms])
+202: |__ RX SRS time                              0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Generate SRS sequence time           0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Get SRS signal time                  0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS channel estimation time          0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS timing advance estimation time   0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS report TLV build time            0.00 us (  0 trials)		(  0.00 total [ms])
+202:         |__ SRS beam report build time       0.00 us (  0 trials)
+202:         |__ SRS IQ matrix build time         0.00 us (  0 trials)
+202: |__ Multipath Channel (CPU)                 43.58 us (2083 trials)		(90782.34 total [ms])
+202: |__ Add Noise (CPU)                        214.90 us (2083 trials)		(447626.67 total [ms])
+202: 
+202: *****************************************
+202: SNR 5.800000: n_errors (10/300,0/10,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (333875/8776800,10499/292560,0/0,0/0)
+202: 
+202: SNR 5.800000: Channel BLER (3.333333e-02,0.000000e+00,nan,nan Channel BER (3.804063e-02,3.588666e-02,nan,nan) Avg round 1.03, Eff Rate 19139.6000 bits/slot, Eff Throughput 98.33, TBS 19464 bits/slot
+202: DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+202: *****************************************
+202: 
+202: UE TX
+202: |__ PHY_PROC_TX                             58.14 us (310 trials)		(18024.15 total [ms])
+202: |__ PUSCH_PROC_STATS                        30.56 us (310 trials)		(9473.33 total [ms])
+202: |__ UCI_ON_PUSCH_MAPPING                     0.00 us (  0 trials)		(  0.00 total [ms])
+202: |__ ULSCH_LDPC_ENCODING_STATS               16.57 us (310 trials)		(5136.21 total [ms])
+202: |__ ULSCH_ENCODING_STATS                    19.76 us (310 trials)		(6126.66 total [ms])
+202: |__ OFDM_MOD_STATS                          27.50 us (310 trials)		(8523.78 total [ms])
+202: 
+202: gNB RX
+202: Total PHY proc rx                           155.10 us (310 trials)
+202:  Statistics std=11.09, min=111.33, q1=146.79, median=153.92, q3=161.42, max=196.17 µs (on 310 trials)
+202: |__ RX PUSCH time                           25.63 us (310 trials)		(7946.30 total [ms])
+202:     |__ ULSCH channel estimation time        9.96 us (310 trials)		(3088.29 total [ms])
+202:         |__ Antenna Processing time          6.68 us (310 trials)
+202:     |__ RX PUSCH Initialization time         1.57 us (310 trials)		(486.08 total [ms])
+202:     |__ RX PUSCH Symbol Processing time     14.01 us (310 trials)		(4342.05 total [ms])
+202:         |__ RX PUSCH extraction              0.23 us (310 trials)
+202:         |__ RX PUSCH channel compensation    0.00 us (310 trials)
+202:         |__ RX PUSCH LLR                     0.00 us (310 trials)
+202:         |__ RX PUSCH layer demapping         0.00 us (310 trials)
+202:         |__ RX PUSCH unscrambling            0.00 us (310 trials)
+202: |__ ULSCH total decoding time              129.39 us (310 trials)		(40111.87 total [ms])
+202:     |__ ULSCH segments decoding time        40.69 us (930 trials)		(37838.82 total [ms])
+202: |__ RX SRS time                              0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Generate SRS sequence time           0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Get SRS signal time                  0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS channel estimation time          0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS timing advance estimation time   0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS report TLV build time            0.00 us (  0 trials)		(  0.00 total [ms])
+202:         |__ SRS beam report build time       0.00 us (  0 trials)
+202:         |__ SRS IQ matrix build time         0.00 us (  0 trials)
+202: |__ Multipath Channel (CPU)                 43.64 us (2393 trials)		(104436.78 total [ms])
+202: |__ Add Noise (CPU)                        215.13 us (2393 trials)		(514798.19 total [ms])
+202: 
+202: *****************************************
+202: SNR 6.000000: n_errors (0/300,0/0,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (304171/8776800,0/0,0/0,0/0)
+202: 
+202: SNR 6.000000: Channel BLER (0.000000e+00,nan,nan,nan Channel BER (3.465625e-02,nan,nan,nan) Avg round 1.00, Eff Rate 19464.0000 bits/slot, Eff Throughput 100.00, TBS 19464 bits/slot
+202: DMRS-PUSCH delay estimation: min 0, max 0, average 0.0
+202: *****************************************
+202: 
+202: UE TX
+202: |__ PHY_PROC_TX                             57.65 us (300 trials)		(17296.36 total [ms])
+202: |__ PUSCH_PROC_STATS                        30.25 us (300 trials)		(9074.53 total [ms])
+202: |__ UCI_ON_PUSCH_MAPPING                     0.00 us (  0 trials)		(  0.00 total [ms])
+202: |__ ULSCH_LDPC_ENCODING_STATS               16.51 us (300 trials)		(4953.50 total [ms])
+202: |__ ULSCH_ENCODING_STATS                    19.67 us (300 trials)		(5899.88 total [ms])
+202: |__ OFDM_MOD_STATS                          27.33 us (300 trials)		(8200.24 total [ms])
+202: 
+202: gNB RX
+202: Total PHY proc rx                           146.33 us (300 trials)
+202:  Statistics std=8.04, min=122.38, q1=141.25, median=146.17, q3=150.42, max=172.62 µs (on 300 trials)
+202: |__ RX PUSCH time                           25.56 us (300 trials)		(7667.00 total [ms])
+202:     |__ ULSCH channel estimation time        9.89 us (300 trials)		(2966.91 total [ms])
+202:         |__ Antenna Processing time          6.58 us (300 trials)
+202:     |__ RX PUSCH Initialization time         1.55 us (300 trials)		(466.21 total [ms])
+202:     |__ RX PUSCH Symbol Processing time     14.03 us (300 trials)		(4207.57 total [ms])
+202:         |__ RX PUSCH extraction              0.21 us (300 trials)
+202:         |__ RX PUSCH channel compensation    0.00 us (300 trials)
+202:         |__ RX PUSCH LLR                     0.00 us (300 trials)
+202:         |__ RX PUSCH layer demapping         0.00 us (300 trials)
+202:         |__ RX PUSCH unscrambling            0.00 us (300 trials)
+202: |__ ULSCH total decoding time              120.71 us (300 trials)		(36212.00 total [ms])
+202:     |__ ULSCH segments decoding time        37.76 us (900 trials)		(33982.68 total [ms])
+202: |__ RX SRS time                              0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Generate SRS sequence time           0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ Get SRS signal time                  0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS channel estimation time          0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS timing advance estimation time   0.00 us (  0 trials)		(  0.00 total [ms])
+202:     |__ SRS report TLV build time            0.00 us (  0 trials)		(  0.00 total [ms])
+202:         |__ SRS beam report build time       0.00 us (  0 trials)
+202:         |__ SRS IQ matrix build time         0.00 us (  0 trials)
+202: |__ Multipath Channel (CPU)                 43.67 us (2693 trials)		(117597.57 total [ms])
+202: |__ Add Noise (CPU)                        215.22 us (2693 trials)		(579583.03 total [ms])
+202: 
+202: *************
+202: PUSCH test OK
+202: *************
+202: 
+202: Num RB:	106
+202: Num symbols:	12
+202: MCS:	9
+202: DMRS config type:	0
+202: DMRS add pos:	0
+202: PUSCH mapping type:	1
+202: DMRS length:	1
+202: DMRS CDM gr w/o data:	1
+202: -- test command finished with 0
+202: -- check command finished with 0
+1/1 Test #202: physim.5g.nr_ulsim.misc.test1 ....   Passed    2.85 sec
+
+The following tests passed:
+	physim.5g.nr_ulsim.misc.test1
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+nr_ulsim        =   2.85 sec*proc (1 test)
+quick_physim    =   2.85 sec*proc (1 test)
+
+Total Test time (real) =   2.85 sec

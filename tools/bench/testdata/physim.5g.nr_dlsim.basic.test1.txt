@@ -1,0 +1,176 @@
+UpdateCTestConfiguration  from :/home/ojasshelke/bench730/build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/home/ojasshelke/bench730/build/DartConfiguration.tcl
+Test project /home/ojasshelke/bench730/build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 109
+    Start 109: physim.5g.nr_dlsim.basic.test1
+
+109: Test command: /usr/bin/cmake "-DTEST_CMD=/home/ojasshelke/bench730/build/nr_dlsim;-P;-n300;-R106;-b106;-s5" "-DCHECK_SCRIPT=/home/ojasshelke/bench730/src/openair1/SIMULATION/tests/analyze-timing.sh" "-P" "/home/ojasshelke/bench730/src/openair1/SIMULATION/tests/RunTimedTest.cmake"
+109: Working Directory: /home/ojasshelke/bench730/build/openair1/SIMULATION/tests
+109: Environment variables: 
+109:  LD_LIBRARY_PATH=/home/ojasshelke/bench730/build
+109:  TEST_DESCRIPTION=106 PRB
+109: Test timeout computed to be: 10000000
+109: '/home/ojasshelke/bench730/build/nr_dlsim' '-P' '-n300' '-R106' '-b106' '-s5'
+109: '/home/ojasshelke/bench730/src/openair1/SIMULATION/tests/analyze-timing.sh'
+109: CMDLINE: "/home/ojasshelke/bench730/build/nr_dlsim" "-P" "-n300" "-R106" "-b106" "-s5" 
+109: Initializing random number generator, seed 6095775456972686412
+109: handling optarg P
+109: handling optarg n
+109: handling optarg R
+109: handling optarg b
+109: handling optarg s
+109: Setting SNR0 to 5.000000
+109: Pre-allocating padded host memory for the CPU channel pipeline...
+109: AWGN: ricean_factor 0.000000
+109: Allocating 614400 samples for txdata
+109: *****************************************
+109: SNR 5.000000: n_errors (299/300,0/299,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (473350/9158400,471868/9127872,0/0,0/0)
+109: 
+109: DLSCH RNTI 1234: current_Qm 2, current_RI 1, total_bytes TX 1495104
+109: SNR 5.000000: Channel BLER (9.966667e-01,0.000000e+00,nan,nan), Channel BER (5.168479e-02,5.169529e-02,nan,nan) Avg round 2.00, Eff Rate 10017.2800 bits/slot, Eff Throughput 50.17, TBS 19968 bits/slot
+109: *****************************************
+109: 
+109: 
+109: gNB TX function statistics (per 500 us slot, NPRB 106, mcs 9, C 3, block 19968)
+109: PHY proc tx                                  29.32 us (599 trials)
+109:  Statistics std=7.85, min=25.58, q1=27.25, median=29.33, q3=29.67, max=53.04 µs (on 599 trials)
+109:     |__ DCI encoding time                    0.00 us (  0 trials)		(  0.00 total [ms])
+109:     |__ DLSCH encoding time                 19.65 us (599 trials)		(11768.52 total [ms])
+109:         |__ LDPC encoding time              16.87 us (599 trials)
+109:     |__ DLSCH modulation time                0.88 us (599 trials)		(524.34 total [ms])
+109:     |__ DLSCH scrambling time                0.16 us (599 trials)		( 95.79 total [ms])
+109:         |__ DLSCH Outer CRC time             0.27 us (599 trials)
+109:     |__ DLSCH PDSCH Generation time          7.51 us (599 trials)		(4500.41 total [ms])
+109:         |__ DLSCH scrambling time            0.16 us (599 trials)
+109:         |__ DLSCH mod/lm time                0.88 us (599 trials)
+109:         |__ DLSCH Resource Mapping time      1.68 us (599 trials)
+109:         |__ DLSCH Precoding time             3.53 us (599 trials)
+109: |__ Multipath Channel (CPU)                 43.40 us (599 trials)		(25995.62 total [ms])
+109: |__ Add Noise (CPU)                        196.10 us (599 trials)		(117462.18 total [ms])
+109: 
+109: UE function statistics (per 500 us slot)
+109: |__ RX_PDSCH_STATS                          41.09 us (599 trials)		(24615.44 total [ms])
+109: |__ DLSCH_RX_PDCCH_STATS                    20.38 us (599 trials)		(12207.70 total [ms])
+109: |__ RX_FO_COMPENSATION_STATS                 0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ RX_DFT_STATS                             2.07 us (8386 trials)		(17338.54 total [ms])
+109: |__ DLSCH_CHANNEL_ESTIMATION_STATS          15.40 us (599 trials)		(9222.41 total [ms])
+109: |__ DLSCH_DECODING_STATS                   152.07 us (599 trials)		(91091.83 total [ms])
+109: |__ DLSCH_LDPC_DECODING_STATS               48.40 us (1797 trials)		(86967.39 total [ms])
+109: |__ DLSCH_EXTRACT_RBS_STATS                  0.24 us (7787 trials)		(1915.07 total [ms])
+109: |__ DLSCH_CHANNEL_SCALE_STATS                0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_CHANNEL_LEVEL_STATS                0.03 us (7787 trials)		(213.61 total [ms])
+109: |__ DLSCH_MRC_MMSE_STATS                     0.01 us (7787 trials)		(108.61 total [ms])
+109: |__ DLSCH_UNSCRAMBLING_STATS                 1.29 us (599 trials)		(771.05 total [ms])
+109: |__ DLSCH_CHANNEL_COMPENSATION_STATS         0.30 us (7787 trials)		(2361.93 total [ms])
+109: |__ DLSCH_LLR_STATS                          0.33 us (7787 trials)		(2582.71 total [ms])
+109: |__ DLSCH_LAYER_DEMAPPING                    0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_LLR_LAYER_DEMAP_STATS              0.36 us (7787 trials)		(2836.66 total [ms])
+109: |__ PHY_RX_PDCCH_STATS                       0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_PROCEDURES_STATS                 153.59 us (599 trials)		(92002.26 total [ms])
+109: *****************************************
+109: SNR 5.200000: n_errors (285/300,0/285,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (436814/9158400,417295/8700480,0/0,0/0)
+109: 
+109: SNR 5.200000: Channel BLER (9.500000e-01,0.000000e+00,nan,nan), Channel BER (4.769545e-02,4.796230e-02,nan,nan) Avg round 1.95, Eff Rate 10483.2000 bits/slot, Eff Throughput 52.50, TBS 19968 bits/slot
+109: *****************************************
+109: 
+109: 
+109: gNB TX function statistics (per 500 us slot, NPRB 106, mcs 9, C 3, block 19968)
+109: PHY proc tx                                  29.21 us (585 trials)
+109:  Statistics std=1.86, min=26.00, q1=28.71, median=29.42, q3=29.75, max=44.21 µs (on 585 trials)
+109:     |__ DCI encoding time                    0.00 us (  0 trials)		(  0.00 total [ms])
+109:     |__ DLSCH encoding time                 19.61 us (585 trials)		(11469.70 total [ms])
+109:         |__ LDPC encoding time              16.89 us (1184 trials)
+109:     |__ DLSCH modulation time                0.90 us (585 trials)		(528.07 total [ms])
+109:     |__ DLSCH scrambling time                0.15 us (585 trials)		( 91.01 total [ms])
+109:         |__ DLSCH Outer CRC time             0.27 us (585 trials)
+109:     |__ DLSCH PDSCH Generation time          7.60 us (585 trials)		(4444.20 total [ms])
+109:         |__ DLSCH scrambling time            0.15 us (585 trials)
+109:         |__ DLSCH mod/lm time                0.90 us (585 trials)
+109:         |__ DLSCH Resource Mapping time      1.69 us (585 trials)
+109:         |__ DLSCH Precoding time             3.58 us (585 trials)
+109: |__ Multipath Channel (CPU)                 43.58 us (1184 trials)		(51596.20 total [ms])
+109: |__ Add Noise (CPU)                        197.14 us (1184 trials)		(233416.46 total [ms])
+109: 
+109: UE function statistics (per 500 us slot)
+109: |__ RX_PDSCH_STATS                          41.18 us (1184 trials)		(48754.99 total [ms])
+109: |__ DLSCH_RX_PDCCH_STATS                    20.25 us (1184 trials)		(23972.75 total [ms])
+109: |__ RX_FO_COMPENSATION_STATS                 0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ RX_DFT_STATS                             2.07 us (16576 trials)		(34328.19 total [ms])
+109: |__ DLSCH_CHANNEL_ESTIMATION_STATS          15.44 us (1184 trials)		(18283.36 total [ms])
+109: |__ DLSCH_DECODING_STATS                   160.63 us (1184 trials)		(190192.34 total [ms])
+109: |__ DLSCH_LDPC_DECODING_STATS               51.27 us (3552 trials)		(182108.36 total [ms])
+109: |__ DLSCH_EXTRACT_RBS_STATS                  0.25 us (15392 trials)		(3804.89 total [ms])
+109: |__ DLSCH_CHANNEL_SCALE_STATS                0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_CHANNEL_LEVEL_STATS                0.03 us (15392 trials)		(420.59 total [ms])
+109: |__ DLSCH_MRC_MMSE_STATS                     0.01 us (15392 trials)		(215.42 total [ms])
+109: |__ DLSCH_UNSCRAMBLING_STATS                 1.29 us (1184 trials)		(1532.21 total [ms])
+109: |__ DLSCH_CHANNEL_COMPENSATION_STATS         0.30 us (15392 trials)		(4674.97 total [ms])
+109: |__ DLSCH_LLR_STATS                          0.34 us (15392 trials)		(5162.54 total [ms])
+109: |__ DLSCH_LAYER_DEMAPPING                    0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_LLR_LAYER_DEMAP_STATS              0.37 us (15392 trials)		(5659.43 total [ms])
+109: |__ PHY_RX_PDCCH_STATS                       0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_PROCEDURES_STATS                 162.16 us (1184 trials)		(192003.59 total [ms])
+109: *****************************************
+109: SNR 5.400000: n_errors (161/300,0/161,0/0,0/0) (negative CRC), false_positive 0/300, errors_scrambling (403247/9158400,216821/4915008,0/0,0/0)
+109: 
+109: SNR 5.400000: Channel BLER (5.366667e-01,0.000000e+00,nan,nan), Channel BER (4.403029e-02,4.411407e-02,nan,nan) Avg round 1.54, Eff Rate 14609.9200 bits/slot, Eff Throughput 73.17, TBS 19968 bits/slot
+109: *****************************************
+109: 
+109: 
+109: gNB TX function statistics (per 500 us slot, NPRB 106, mcs 9, C 3, block 19968)
+109: PHY proc tx                                  29.50 us (461 trials)
+109:  Statistics std=5.37, min=26.00, q1=27.25, median=29.33, q3=29.79, max=50.67 µs (on 461 trials)
+109:     |__ DCI encoding time                    0.00 us (  0 trials)		(  0.00 total [ms])
+109:     |__ DLSCH encoding time                 19.70 us (461 trials)		(9081.26 total [ms])
+109:         |__ LDPC encoding time              16.90 us (1645 trials)
+109:     |__ DLSCH modulation time                0.92 us (461 trials)		(423.80 total [ms])
+109:     |__ DLSCH scrambling time                0.17 us (461 trials)		( 76.58 total [ms])
+109:         |__ DLSCH Outer CRC time             0.31 us (461 trials)
+109:     |__ DLSCH PDSCH Generation time          7.70 us (461 trials)		(3550.09 total [ms])
+109:         |__ DLSCH scrambling time            0.17 us (461 trials)
+109:         |__ DLSCH mod/lm time                0.92 us (461 trials)
+109:         |__ DLSCH Resource Mapping time      1.70 us (461 trials)
+109:         |__ DLSCH Precoding time             3.57 us (461 trials)
+109: |__ Multipath Channel (CPU)                 43.57 us (1645 trials)		(71678.04 total [ms])
+109: |__ Add Noise (CPU)                        196.95 us (1645 trials)		(323986.55 total [ms])
+109: 
+109: UE function statistics (per 500 us slot)
+109: |__ RX_PDSCH_STATS                          41.03 us (1645 trials)		(67492.96 total [ms])
+109: |__ DLSCH_RX_PDCCH_STATS                    20.22 us (1645 trials)		(33258.89 total [ms])
+109: |__ RX_FO_COMPENSATION_STATS                 0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ RX_DFT_STATS                             2.07 us (23030 trials)		(47653.37 total [ms])
+109: |__ DLSCH_CHANNEL_ESTIMATION_STATS          15.43 us (1645 trials)		(25377.91 total [ms])
+109: |__ DLSCH_DECODING_STATS                   176.44 us (1645 trials)		(290252.22 total [ms])
+109: |__ DLSCH_LDPC_DECODING_STATS               56.52 us (4935 trials)		(278914.91 total [ms])
+109: |__ DLSCH_EXTRACT_RBS_STATS                  0.24 us (21385 trials)		(5257.65 total [ms])
+109: |__ DLSCH_CHANNEL_SCALE_STATS                0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_CHANNEL_LEVEL_STATS                0.03 us (21385 trials)		(584.24 total [ms])
+109: |__ DLSCH_MRC_MMSE_STATS                     0.01 us (21385 trials)		(305.18 total [ms])
+109: |__ DLSCH_UNSCRAMBLING_STATS                 1.30 us (1645 trials)		(2142.70 total [ms])
+109: |__ DLSCH_CHANNEL_COMPENSATION_STATS         0.30 us (21385 trials)		(6469.13 total [ms])
+109: |__ DLSCH_LLR_STATS                          0.33 us (21385 trials)		(7144.20 total [ms])
+109: |__ DLSCH_LAYER_DEMAPPING                    0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_LLR_LAYER_DEMAP_STATS              0.36 us (21385 trials)		(7820.42 total [ms])
+109: |__ PHY_RX_PDCCH_STATS                       0.00 us (  0 trials)		(  0.00 total [ms])
+109: |__ DLSCH_PROCEDURES_STATS                 178.00 us (1645 trials)		(292805.96 total [ms])
+109: PDSCH test OK
+109: -- test command finished with 0
+109: -- check command finished with 0
+1/1 Test #109: physim.5g.nr_dlsim.basic.test1 ...   Passed    2.39 sec
+
+The following tests passed:
+	physim.5g.nr_dlsim.basic.test1
+
+100% tests passed, 0 tests failed out of 1
+
+Label Time Summary:
+nr_dlsim        =   2.39 sec*proc (1 test)
+quick_physim    =   2.39 sec*proc (1 test)
+
+Total Test time (real) =   2.40 sec
